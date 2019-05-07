@@ -6,7 +6,7 @@ just a demo
 ```
 npm install
 ```
-###run the project
+### run the project
 
 ```
 npm start
