@@ -1,0 +1,24 @@
+.headerBox {
+  height: 60px;
+  margin-left: 250px;
+  background: aquamarine;
+}
+
+.leftBox {
+  width: 250px;
+  height: 100%;
+  float: left;
+  background: #f7f7f7;
+
+}
+
+.rightBox {
+  display: block;
+  margin-left: 250px;
+  height: calc( 100vh - 60px );
+  background: bisque;
+}
+
+.container {
+  height: 100%;
+}

@@ -1,0 +1,74 @@
+
+.container {
+  display: inline-grid;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+}
+
+.treeItem {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  margin: 20px 10px;
+  border: 1px solid cornflowerblue;
+  padding: 5px;
+  text-align: left;
+}
+
+.children {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+}
+
+.arrow::before{
+  content: ' ';
+  display: block;
+  height: 20px;
+  width: 5px;
+  position: absolute;
+  left: 122px;
+  top: -20px;
+  background: url("../assets/arrow.png") no-repeat center bottom;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.children::before{
+  content: ' ';
+  display: block;
+  height: 20px;
+  width: 0px;
+  margin: -20px auto 0 auto;
+  border: 1px solid rgb(51,122,183);
+}
+
+.leftBorder{
+  position: absolute;
+  width: 132px;
+  height: 0;
+  border:1px solid rgb(51,122,183);
+  top: 0;
+  right: 0;
+}
+.rightBorder{
+  position: absolute;
+  width: 139px;
+  height: 0;
+  border:1px solid rgb(51,122,183);
+  top: 0;
+  left: 0;
+}
+.middleBorder{
+  position: absolute;
+  width: 270px;
+  height: 0;
+  border:1px solid rgb(51,122,183);
+  top: 0;
+  left: 0;
+}
+.noBorder{
+  display: none;
+}
